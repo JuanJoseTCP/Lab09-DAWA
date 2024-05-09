@@ -1,0 +1,15 @@
+<div class="container">
+    <div class="row">
+      <div class="col-md-4" *ngFor="let image of images">
+        <div class="card mb-4 shadow-sm">
+          <img [src]="image.download_url" class="card-img-top" alt="Imagen">
+          <div class="card-body">
+            <h5 class="card-title">Autor: {{ image.author }}</h5>
+            <p class="card-text">Medidas: {{ image.width }}x{{ image.height }}</p>
+            <a [href]="image.url" class="btn btn-primary" target="_blank">Ver original</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
